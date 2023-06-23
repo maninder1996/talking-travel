@@ -1,0 +1,35 @@
+.adventures {
+  margin: 7rem 0;
+  @media(max-width:767px){
+    margin:5rem 0;
+  }
+}
+.adventures_location {
+  text-align: center;
+  position: relative;
+  img{
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+  .img{
+    overflow: hidden;
+    border-radius: 8px;
+    @media(max-width:767px){
+      margin:0 0 1rem 0;
+    }
+    &:hover{
+      img{
+        transform: scale(1.04);
+      }
+    }
+  }
+  .location_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    backdrop-filter: blur(6px);
+    padding: 10px;
+  }
+}

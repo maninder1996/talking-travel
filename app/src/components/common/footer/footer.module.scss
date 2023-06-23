@@ -1,0 +1,27 @@
+.footer {
+  color: #939eb4;
+  padding: 2rem 0;
+  @media(max-width:767px){
+    text-align: center;
+    padding:1rem 0;
+  }
+  .nav {
+    justify-content: flex-end;
+    @media(max-width:767px){
+      justify-content: center;
+    }
+    li {
+      margin-right: 15px;
+      @media(max-width:767px){
+        margin-right: 0;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .copy_right,
+  a {
+    color: #939eb4;
+  }
+}

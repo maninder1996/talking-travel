@@ -1,0 +1,23 @@
+@import "../../../styles/index.scss";
+.contact {
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form_group {
+  margin-bottom: 0.5rem;
+}
+.input_wrap {
+  padding: 1rem;
+}
+.contact_form {
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+}
+.submit_btn {
+  max-width: 100%;
+  width: 203px;
+  margin-top: 0.5rem;
+}

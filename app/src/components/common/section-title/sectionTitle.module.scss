@@ -1,0 +1,14 @@
+@import '../../../../styles/index.scss';
+.title{
+    @include heading2;    
+}
+.sub_title{
+    @include font-small-bold;
+    text-transform: uppercase;
+    color: $secondery-color;
+    margin: 0;
+}
+.center_title{
+    text-align: center;
+    margin-bottom:3rem;
+}

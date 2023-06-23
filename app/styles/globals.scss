@@ -1,0 +1,34 @@
+@import "./index.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $primary-color;
+}
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/***button*********/
+.darkButton {
+  @include button;
+  background-color: $secondery-color;
+  color: $white;
+  &:hover {
+    color: #fff;
+  }
+}
+.playButton {
+  @include flex;
+  background-color: transparent;
+  border: none;
+  .watch_text {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../styles/index.scss";
+
+.hero_banner {
+  padding: 7rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0rem;
+  @media(max-width:767px){
+    padding: 5rem 0;
+  }
+  .hero_content {
+    width: 505px;
+    max-width: 100%;
+  }
+  .title {
+    @include heading1;
+    color: #fff;
+    .talk_title {
+      color: $secondery-color;
+    }
+  }
+  p {
+    font-size: 22px;
+    line-height: 164%;
+    color: #fff;
+  }
+  // .btn_wrap {
+  //   margin-top: 40px;
+  //   @include flex;
+  //   .watch_btn {
+  //     margin-left: 20px;
+  //   }
+  // }
+}

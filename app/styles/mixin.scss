@@ -1,0 +1,87 @@
+@import "variable";
+
+
+@mixin flex{
+  display: flex;
+  align-items: center;
+}
+/*********heading******/
+@mixin heading1 {
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 115%;
+  letter-spacing: -0.01em;
+  @media(max-width:767px){
+    font-size: 50px;
+  }
+}
+@mixin heading2 {
+  font-weight: 400;
+  font-size:40px;
+  line-height: 92%;
+  @media(max-width:767px){
+    font-size:26px;
+  }
+}
+@mixin heading3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+
+}
+@mixin heading4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+}
+
+/******font*******/
+@mixin talking-travel-font($font-size, $line-height: normal, $weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+@mixin font-main {
+  @include talking-travel-font(18px, 36px, 400);
+
+  @media (max-width: $sm-max) {
+    @include talking-travel-font(16px, 25px);
+  }
+}
+
+@mixin font-main-midum {
+  @include talking-travel-font(18px, 36px, 500);
+
+  @media (max-width: $sm-max) {
+    @include talking-travel-font(16px, 25px);
+  }
+}
+
+@mixin font-small-bold {
+  @include talking-travel-font(18px, 36px, 700);
+
+  @media (max-width: $sm-max) {
+    @include talking-travel-font(16px, 25px);
+  }
+}
+
+@mixin font-medium {
+  @include talking-travel-font(16px, 32px, 400);
+}
+
+@mixin font-semi-bold {
+  @include talking-travel-font(16px, 32px, 600);
+}
+
+@mixin font-bold {
+  @include talking-travel-font(16px, 32px, 700);
+}
+
+@mixin font-small {
+  @include talking-travel-font(14px, 1.5);
+}
+
+@mixin font-small-medium {
+  @include talking-travel-font(14px, 1.5, 500);
+}
